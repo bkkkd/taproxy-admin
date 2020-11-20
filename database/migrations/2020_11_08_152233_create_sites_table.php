@@ -17,7 +17,7 @@ class CreateSitesTable extends Migration
             $table->bigIncrements('id');
             $table->string('main_host')->unique();
             $table->text('alias_host');
-            $table->bigInteger('ssl_id');
+            $table->bigInteger('ssl_id')->default(0);
             $table->string('proxy_scheme');
             $table->string('proxy_host');
             $table->string('proxy_port');
