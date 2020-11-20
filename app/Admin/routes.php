@@ -14,5 +14,5 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('home');
 
     $router->resource('sites', SiteController::class);
-
+    $router->resource('ssls', SslController::class);
 });

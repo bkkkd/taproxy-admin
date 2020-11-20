@@ -18,7 +18,7 @@ class CreateSslsTable extends Migration
             $table->string('name');
             $table->text('key');
             $table->text('pub');
-            $table->text('clain');
+            $table->text('clain')->nullable();
             $table->timestamps();
         });
     }
